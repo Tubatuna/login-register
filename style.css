@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+background-image: url(/background-1585624_960_720.jpg);
+font-family: 'Roboto', sans-serif;
+    width: 100%;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#giris,#kayit
+{   border: 1px solid #204142;
+    border-radius: 5px;
+    margin-top: 150px;
+    padding: 10px;
+    height: 400px;
+    width: 350px;
+  
+    transform: translate(30%,-7%);
+    /* box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.15), 0px 1px 2px 0px rgba(0, 0, 0, 0.075), 0px 4px 10px 0px rgba(0, 0, 0, 0.05); */
+    box-shadow: 0 0 20px 0 rgba(34,33,0.3);
+    animation: fade 0.5s ease 0.6s backwards;
+transition: opacity 0.3s; 
+}
+#kayit{
+    display: none;
+}
+header {
+    width: 100%;
+    /* height:25%; */
+
+}
+
+.nav-bar {
+    float: right;
+    display: flex;
+}
+
+.nav-bar ul {
+    list-style: none;
+
+}
+
+.nav-bar ul li {
+    float: left;
+    padding: 5px;
+    border: 2px solid #FFF1DC;
+    border-radius: 10px;
+    background-color: #FFF1DC;
+    margin: 5px;
+    box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.15), 0px 1px 2px 0px rgba(0, 0, 0, 0.075), 0px 4px 10px 0px rgba(0, 0, 0, 0.05); 
+}
+.nav-bar ul li button{
+    background-color: #FFF1DC ;
+    
+}
+#giris h2 {
+    margin: 15px;
+    text-align: center;
+}
+
+#kayit h2 {
+    margin: 15px;
+    text-align: center;
+}
+.kutu{
+display:flex;
+flex-direction: column;
+justify-content: center; 
+align-items: center;
+}
+.kutu input{
+    width: 80%;
+
+  
+    margin:10px;
+    text-align: center;
+}
+
+.kutu input {
+    height: 35px;
+    border-radius: 5px;
+
+}
+
+button {
+
+    text-transform: uppercase;
+    padding: 10px;
+    border: 1px solid #FFF1DC;
+    border-radius: 5px;
+}
+
+.buton {
+    text-align: center;
+
+}
+
+.buton a{
+  /* text-decoration: none; */
+  color:black;
+  font-size: 15px;
+}
+.buton p{
+  margin:15px;
+  color:black;
+}
+
+
+footer p {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    opacity: 0.8;
+
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}

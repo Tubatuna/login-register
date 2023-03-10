@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>webPage</title>
+
+
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="nav-bar">
+                <ul>
+                    <li>
+                        <button onclick="Logİn()">LOGİN</button>
+                    </li>
+
+
+                    <li><button onclick="signİn()">REGİSTER</button> </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="giris">
+            <h2>LOGİN</h2>
+            <div class="kutu">
+                <p>Username</p>
+                <input type="text" placeholder=" username" id="bilgi"><br>
+                <p>Password</p>
+                <input type="password" placeholder=" ********" id="sifre"><br>
+            </div>
+            <div class="buton" onclick="show()"><button>login</button>
+
+                <p><a href="">Şifremi Unuttum</a></p>
+            </div>
+        </div>
+      
+        <div id="kayit">
+            <h2>Register</h2>
+            <div class="kutu">
+
+                <p>Username </p>
+                <input type="text" placeholder="username" id="bilgi"><br>
+                <p>Password</p>
+                <input type="password" placeholder="********" id="sifre"><br>
+            </div>
+            <div class="buton" onclick="show()"><button>Register</button>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <p>Coded by Tuğba<span class="material-symbols-outlined" style="color:rgb(193, 172, 175)">
+            spa
+            </span></p>
+    </footer>
+
+    <script>
+
+
+        function Logİn() {
+
+            document.getElementById("giris").style.display = "block";
+            document.getElementById("kayit").style.display = "none";
+        }
+        function signİn() {
+            document.getElementById("giris").style.display = "none";
+            document.getElementById("kayit").style.display = "block";
+        }
+        function show() {
+            let name
+            name = document.getElementById("bilgi").value + " " + document.getElementById("sifre").value;
+
+            alert(name);
+
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>
